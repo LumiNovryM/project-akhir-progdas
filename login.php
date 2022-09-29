@@ -1,47 +1,65 @@
 <?php
-// Cek apakah tombol submit sudah ditekan atau belum
-if( isset($_POST["submit"]) ) {
-    // Cek Username & Password
-    if( $_POST["username"] == "admin" && $_POST["password"] == "adminpplg1" ) {
-    // Jika benar, redirect ke halaman admin
-        header("Location: dashboard.php");
-    }else{ 
-    // Else, tampilkan pesan kesalahan
-        $error = true;
 
+include 'connect.php';
+
+    if(isset($_POST["login"])) {
+
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+
+
+        $result = mysqli_query($connect, "SELECT * FROM user WHERE username = '$username'");
+
+        // Cek Username
+        if( mysqli_num_rows($result) === 1 ) {
+
+
+            // Cek Password
+            $row = mysqli_fetch_assoc($result);
+            if( password_verify($password, $row["password"]) ) {
+                header("Location: dashboard.php");
+            }
+
+        }
 
     }
 
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        label{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Halaman Login</h1>
 
-        <!--===== CSS =====-->
-        <link rel="stylesheet" href="css/login.css">
 
-        <title>Login</title>
-    </head>
-    <body>
-        <div class="l-form">
-            <form action="dashboard.php" class="form" method="post">
-                <h1 class="form__title">Sign In</h1>
+    <form action="" method="post">
 
-                <div class="form__div">
-                    <input type="text" class="form__input" placeholder=" " name="username">
-                    <label for="" class="form__label">Username</label>
-                </div>
+        <ul>
+            <li>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </li>
+            <li>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </li>
+            <li>
+                <button type="submit" name="login">Login</button>
+            </li>
+        </ul>
 
-                <div class="form__div">
-                    <input type="password" class="form__input" placeholder=" " name="password">
-                    <label for="" class="form__label">Password</label>
-                </div>
+    </form>
 
-                <input type="submit" class="form__button" value="Sign In">
-            </form>
-        </div>
-    </body>
+</body>
 </html>
