@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+:root{
+    --background-color: #1F1D2C;
+    --main-color: #FFA400;
+    --text-color-1: #FFFFFF;
+    --text-color-2: #FFA400;
+    --font: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1F1D2C;
+}
+
+.card{
+    background-color: var(--background-color);
+    width: 450px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow:  20px 20px 34px #0f0e16,
+             -20px -20px 34px #2f2c42;
+}
+
+form{
+    height: 400px;
+}
+
+.title{
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color: var(--main-color);
+    position: relative;
+}
+
+.input .form_label{
+    background-color: var(--background-color);
+    position: relative;
+    width: 90px;
+    top: 13px;
+    left: 20px;
+    text-align: center;
+}
+
+.input .form_labelspec{
+    background-color: var(--background-color);
+    position: relative;
+    width: 150px;
+    top: 13px;
+    left: 20px;
+    text-align: center;
+}
+
+.input .form_input{
+    border-radius: 10px;
+    height: 50px;
+    outline: none;
+    background-color: var(--background-color);
+    border: 2px solid var(--main-color);
+    padding: 15px;
+    color: var(--main-color);
+}
+
+.card button{
+    margin-top: 50px;
+    margin-left: 299px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFA400;
+    color: #FFFFFF;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .8s ease;
+}
+
+.card button:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+}
+
+
