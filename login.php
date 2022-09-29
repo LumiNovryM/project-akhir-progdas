@@ -22,6 +22,8 @@ include 'connect.php';
 
         }
 
+        $error = true;
+
     }
 
 ?>
@@ -42,6 +44,11 @@ include 'connect.php';
     
     <h1>Halaman Login</h1>
 
+    <?php if( isset($error) ) : ?>
+
+        <p style="color: red; font-weight: bold;">Username & Password Salah</p>
+
+    <?php endif; ?>
 
     <form action="" method="post">
 
