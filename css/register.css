@@ -34,7 +34,7 @@
     font-family: var(--font);
 }
 
-body{
+.parent{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,11 +58,11 @@ body{
     height: 500px;
     border-radius: 15px;
     padding: 20px;
-    box-shadow:  var(--shadow);
+    box-shadow: var(--shadow);
 }
 
 form{
-    height: 400px;
+    height: 450px;
 }
 
 .title{
@@ -109,7 +109,7 @@ form{
 }
 
 .card button{
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 299px;
     padding: 10px 25px;
     border-radius: 10px;
@@ -120,6 +120,7 @@ form{
     cursor: pointer;
     transition: all .8s ease;
 }
+
 
 
 
