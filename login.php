@@ -34,6 +34,7 @@ include 'connect.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
     <style>
         label{
             display: block;
@@ -42,31 +43,40 @@ include 'connect.php';
 </head>
 <body>
     
-    <h1>Halaman Login</h1>
 
-    <?php if( isset($error) ) : ?>
+    
 
-        <p style="color: red; font-weight: bold;">Username & Password Salah</p>
+    <div class="card">
 
-    <?php endif; ?>
+        <p class="title">Login</p>
 
-    <form action="" method="post">
+        <?php if( isset($error) ) : ?>
 
-        <ul>
-            <li>
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username">
-            </li>
-            <li>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-            </li>
-            <li>
-                <button type="submit" name="login">Login</button>
-            </li>
-        </ul>
 
-    </form>
+            <p style="font-size: 15px;color: red; text-align: center;">Username & Password Salah</p>
+
+        <?php endif; ?>
+
+        <form action="" method="post">
+
+      
+            <div class="input">
+                <label for="username" class="form_label">Username</label>
+                <input type="text" name="username" id="username" class="form_input">
+            </div>
+
+            <div class="input">
+                <label for="password" class="form_label">Password</label>
+                <input type="password" name="password" id="password" class="form_input">
+            </div>
+
+           
+
+            <button type="submit" name="login" class="button">Login</button>
+
+            
+        </form>
+    </div>
 
 </body>
 </html>
