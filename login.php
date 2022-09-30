@@ -44,6 +44,7 @@ include 'connect.php';
 <body>
     
 
+        <img src="img/moon.png" id="icon"> 
     
 
     <div class="card">
@@ -77,6 +78,20 @@ include 'connect.php';
             
         </form>
     </div>
+
+
+    <script>
+            var icon = document.getElementById("icon");
+
+                icon.onclick = function(){
+                    document.body.classList.toggle("dark-theme")
+                    if(document.body.classList.contains("dark-theme")){
+                        icon.src = "img/sun.png";
+                    }else{
+                        icon.src = "img/moon.png";
+                    }
+                }
+        </script>
 
 </body>
 </html>

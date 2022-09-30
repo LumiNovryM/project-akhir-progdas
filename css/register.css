@@ -1,30 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 
 :root{
-       /*=== Light Mode ===*/
-    --background-color: #F1F1F1;
-    --main-color: #A2A1A1;
-    --shadow:   12px 12px 16px #b0b0b0,
-    -12px -12px 16px #ffffff;
-    --text-color-1: 
-    --text-color-2: #A2A1A1;
-    --button: #222026;
-    --font: 'Poppins', sans-serif;
+    /*=== Light Mode ===*/
+ --background-color: #F1F1F1;
+ --main-color: #A2A1A1;
+ --shadow:   12px 12px 16px #b0b0b0,
+ -12px -12px 16px #ffffff;
+ --text-color-1: 
+ --text-color-2: #A2A1A1;
+ --button: #222026;
+ --font: 'Poppins', sans-serif;
 
 }
 
 .dark-theme{
-    /*=== Dark Mode ===*/
-    --background-color: #1F1D2C;
-    --main-color: #FFA400;
-    --shadow: 20px 20px 34px #0f0e16,
-    -20px -20px 34px #2f2c42;
-    --text-color-1: #FFFFFF;
-    --text-color-2: #FFA400;
-    --button: #FFA400;
-    --font: 'Poppins', sans-serif;
-      
-  
+ /*=== Dark Mode ===*/
+ --background-color: #1F1D2C;
+ --main-color: #FFA400;
+ --shadow: 20px 20px 34px #0f0e16,
+ -20px -20px 34px #2f2c42;
+ --text-color-1: #FFFFFF;
+ --text-color-2: #FFA400;
+ --button: #FFA400;
+ --font: 'Poppins', sans-serif;
+   
+
 }
 
 *{

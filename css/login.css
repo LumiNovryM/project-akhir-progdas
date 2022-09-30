@@ -1,17 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 
 :root{
-    /*=== Dark Mode ===*/
-    --background-color: #1F1D2C;
-    --main-color: #FFA400;
-    --text-color-1: #FFFFFF;
-    --text-color-2: #FFA400;
-    --font: 'Poppins', sans-serif;
-
     /*=== Light Mode ===*/
-    --background-color2: #F1F1F1;
-    --main-color2: #222026;
-    --text-color2: #A2A1A1;
+ --background-color: #F1F1F1;
+ --main-color: #A2A1A1;
+ --shadow:   12px 12px 16px #b0b0b0,
+ -12px -12px 16px #ffffff;
+ --text-color-1: 
+ --text-color-2: #A2A1A1;
+ --button: #222026;
+ --font: 'Poppins', sans-serif;
+
+}
+
+.dark-theme{
+ /*=== Dark Mode ===*/
+ --background-color: #1F1D2C;
+ --main-color: #FFA400;
+ --shadow: 20px 20px 34px #0f0e16,
+ -20px -20px 34px #2f2c42;
+ --text-color-1: #FFFFFF;
+ --text-color-2: #FFA400;
+ --button: #FFA400;
+ --font: 'Poppins', sans-serif;
+   
+
 }
 
 *{
@@ -26,7 +39,17 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1F1D2C;
+    background-color: var(--background-color);
+}
+
+#icon{
+    position: absolute;
+    top: 15px;
+    right: 200px;
+    height: 30px;
+    width: 30px;
+    color: #FFA400;
+    cursor: pointer;
 }
 
 .card{
@@ -35,8 +58,7 @@ body{
     height: 500px;
     border-radius: 15px;
     padding: 20px;
-    box-shadow:  20px 20px 34px #0f0e16,
-             -20px -20px 34px #2f2c42;
+    box-shadow:  var(--shadow);
 }
 
 form{
@@ -92,15 +114,13 @@ form{
     padding: 10px 25px;
     border-radius: 10px;
     border: none;
-    background-color: #FFA400;
+    background-color: var(--button);
     color: #FFFFFF;
     font-size: 15px;
     cursor: pointer;
     transition: all .8s ease;
 }
 
-.card button:hover{
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
-}
+
 
 
