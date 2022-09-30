@@ -44,7 +44,7 @@ include 'connect.php';
 <body>
     
 
-        <img src="img/moon.png" id="icon"> 
+    <img src="img/moon.png" id="icon"> 
     
 
     <div class="card">
