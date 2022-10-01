@@ -219,7 +219,6 @@ nav {
 }
 
 .container .products-container .product:hover {
-    outline: .2rem solid #222;
     outline-offset: 0;
 }
 
