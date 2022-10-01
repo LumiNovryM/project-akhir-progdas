@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -8,7 +9,7 @@
     text-decoration: none;
 }
 
-nav{
+nav {
     position: fixed;
     width: 100%;
     top: 0;
@@ -21,28 +22,29 @@ nav{
     box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
     background-color: #e9e9e9;
 }
-.logo{
+
+.logo {
     font-size: 24px;
     font-weight: 600;
     color: #FFA400;
-   
 }
 
-.navbar{
+.navbar {
     display: flex;
 }
 
-.navbar a{
+.navbar a {
     font-size: 1rem;
     padding: 10px 30px;
     font-weight: 500;
     color: #A2A1A1;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: #FFA400;
 }
-.hero{
+
+.hero {
     display: flex;
     align-items: center;
     width: 100%;
@@ -51,34 +53,37 @@ nav{
     background-image: url("../images/Group\ 11.svg");
     background-size: cover;
 }
-.hero-img img{
-    width: 100%;
+
+.hero-img img {
+    width: 75%;
+    margin-left: 250px;
 
 
-    
+
     /* height: 80px; */
 }
 
 
-.home-text h2{
+.home-text h2 {
     color: #FFA400;
     font-size: 64px;
-    
+
 }
 
-.home-text h3{
+.home-text h3 {
     color: #000000;
     font-size: 40px;
     width: 400px;
 }
 
-.home-text p{
+.home-text p {
+    margin-bottom: 1rem;
     color: #000000;
     font-weight: 200;
     font-size: 25px;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 0.5rem;
@@ -86,15 +91,23 @@ nav{
     background-color: #FFA400;
 }
 
-.promo-text{
-    margin-top: 100px;
+.promo-text {
+    margin-top: 110px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
-.promo-text span{
+.promo-text span {
     color: #FFA400;
+    font-weight: 700;
 }
-.promo-card{
+
+.promo-text h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.promo-card {
     display: flex;
     margin: auto;
     width: 90%;
@@ -104,7 +117,7 @@ nav{
 
 .card1,
 .card2,
-.card3{
+.card3 {
     width: 360px;
     height: 450px;
     background-color: #fff;
@@ -115,12 +128,12 @@ nav{
     padding: 30px 20px;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 2px 2px 12px rgb( 0, 0, 0, 0.2) ;
+    box-shadow: 2px 2px 12px rgb(0, 0, 0, 0.2);
 }
 
 .card1 div,
 .card2 div,
-.card3 div{
+.card3 div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,8 +147,8 @@ nav{
 
 .card1 a,
 .card2 a,
-.card3 a{
-    
+.card3 a {
+
     padding: 10px;
     background-color: #FFA400;
     color: white;
@@ -144,15 +157,203 @@ nav{
 
 .card1 a:hover,
 .card2 a:hover,
-.card3 a:hover{
+.card3 a:hover {
     background-color: #ebb34b;
 }
 
 .card1 h3,
 .card2 h3,
-.card3 h3{
+.card3 h3 {
     margin-top: 30px;
 }
 
 
+.card img {
+    width: 100%;
+}
 
+.card .card__ h3 {
+    margin: 0.5rem 0;
+}
+
+
+.heading-menu {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.heading-menu span {
+    color: #FFA400;
+    font-weight: 700;
+}
+
+.heading-menu h2 {
+    font-size: 24px;
+}
+
+
+.container .products-container {
+    box-sizing: border-box;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 50px;
+    align-items: center;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.container .products-container .product {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 20px rgb(0, 0, 0, 50%);
+    padding: 10px;
+}
+
+.container .products-container .product:hover {
+    outline: .2rem solid #222;
+    outline-offset: 0;
+}
+
+.container .products-container .product img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.container .products-container .product:hover img {
+    transform: scale(1.2);
+    transition: 0.9s;
+}
+
+.container .products-container .product h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+}
+
+.container .products-container .product:hover h3 {
+    transform: scale(1.2);
+    transition: 0.5s;
+    color: #FFA400;
+}
+
+.products-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-preview .preview {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+}
+
+.products-preview .preview.active {
+    display: inline-block;
+}
+
+.products-preview .preview img {
+    height: 15rem;
+}
+
+.products-preview .preview .bx-x {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 35px;
+}
+
+.products-preview .preview h3 {
+    color: #444;
+    padding: .5rem 0;
+    font-size: 20px;
+}
+
+.products-preview .preview p {
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-size: 15px;
+    color: #777;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    margin-top: 250px;
+    padding-top: 0;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 50px;
+}
+
+.contact-box {
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+.contact-box h3 span{
+    color: #FFA400;
+}
+
+.social {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.social i {
+    font-size: 20px;
+    margin-right: 1rem;
+    color: #2f3640;
+}
+
+.social i:hover{
+    color: #FFA400;
+}
+
+.contact-box li a {
+    font-size: 1rem;
+    color: #2f3640;
+}
+
+.contact-box li a:hover{
+    color: #FFA400;
+} 
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address i {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.address span {
+    margin-left: 1rem;
+}
