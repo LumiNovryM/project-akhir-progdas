@@ -167,6 +167,23 @@ nav {
     margin-top: 30px;
 }
 
+.card3 img{
+    width: 311px;
+    height: 207px;
+    border-radius: 20px;
+}
+
+.card2 img{
+    width: 311px;
+    height: 207px;
+    border-radius: 20px;
+}
+
+.card1 img{
+    width: 311px;
+    height: 207px;
+    border-radius: 20px;
+}
 
 .card img {
     width: 100%;
