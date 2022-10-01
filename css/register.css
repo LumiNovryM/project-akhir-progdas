@@ -32,6 +32,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font);
+    transition: all .3s ease;
 }
 
 .parent{
@@ -118,7 +119,6 @@ form{
     color: #FFFFFF;
     font-size: 15px;
     cursor: pointer;
-    transition: all .8s ease;
 }
 
 

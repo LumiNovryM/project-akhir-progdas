@@ -39,7 +39,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font);
-    transition: all 1s ease;
+    transition: all .3s ease;
 }
 
 #icon{
