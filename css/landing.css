@@ -7,6 +7,41 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+:root {
+    --background-color: #F1f1f1;
+    --button: #FFA400;
+    --price-color: #222026;
+    --button-text-color: #F1F1F1;
+    --card-color: #fefefe;
+    --shadow-color: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+    --box-shadow: 2px 2px 12px rgb(0, 0, 0, 0.2) ;
+    --nav-color: #e9e9e9;
+    --text-color: #222026;
+    --p-color: #A2A1A1;
+    --footer-color: #f1f1f1;
+    --footer-p-color: #2f3640;
+}
+
+.dark-theme{
+    --background-color: #1F1D2C;
+    --button: #FFA400;
+    --price-color: #A2A1A1;
+    --button-text-color: #F1F1F1;
+    --card-color: #2E2B3F;
+    --shadow-color: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+    --box-shadow: 2px 2px 12px rgb(0, 0, 0, 0.2) ;
+    --nav-color: #e9e9e9;
+    --text-color: #A2A1A1;
+    --p-color: #A2A1A1;
+    --footer-color: #2E2B3F;
+    --footer-p-color: #A2A1A1;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 nav {
@@ -19,8 +54,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 18px 100px;
-    box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
-    background-color: #e9e9e9;
+    box-shadow: var(--shadow-color);
+    background-color: var(--background-color);
 }
 
 .logo {
@@ -37,12 +72,21 @@ nav {
     font-size: 1rem;
     padding: 10px 30px;
     font-weight: 500;
-    color: #A2A1A1;
+    color: var(--p-color);
 }
 
 .navbar a:hover {
     color: #FFA400;
 }
+
+#icon {
+    position: absolute;
+    right: 70px;
+    width: 25px;
+    cursor: pointer;
+}
+
+
 
 .hero {
     display: flex;
@@ -52,15 +96,12 @@ nav {
     padding: 50px 10%;
     background-image: url("../images/Group\ 11.svg");
     background-size: cover;
+    background-color: var(--background-color);
 }
 
 .hero-img img {
     width: 75%;
     margin-left: 250px;
-
-
-
-    /* height: 80px; */
 }
 
 
@@ -71,14 +112,14 @@ nav {
 }
 
 .home-text h3 {
-    color: #000000;
+    color: var(--text-color);
     font-size: 40px;
     width: 400px;
 }
 
 .home-text p {
     margin-bottom: 1rem;
-    color: #000000;
+    color: var(--p-color);
     font-weight: 200;
     font-size: 25px;
 }
@@ -92,6 +133,7 @@ nav {
 }
 
 .promo-text {
+    color: var(--text-color);
     margin-top: 110px;
     margin-bottom: 50px;
     text-align: center;
@@ -102,10 +144,6 @@ nav {
     font-weight: 700;
 }
 
-.promo-text h3 {
-    font-size: 32px;
-    font-weight: 700;
-}
 
 .promo-card {
     display: flex;
@@ -120,7 +158,6 @@ nav {
 .card3 {
     width: 360px;
     height: 450px;
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,27 +165,34 @@ nav {
     padding: 30px 20px;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 2px 2px 12px rgb(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
+    background-color: var(--card-color);
 }
 
-.card1 div,
-.card2 div,
-.card3 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: #2f3640;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
+.card1 span {
+    color:  #FFA400;
 }
+.card2 span {
+    color:  #FFA400;
+}
+.card3 span {
+    color: #FFA400;
+}
+
+.card1 h4 {
+    color: var(--price-color);
+}
+.card2 h4 {
+    color: var(--price-color);
+}
+.card3 h4 {
+    color:var(--price-color);
+}
+
 
 .card1 a,
 .card2 a,
 .card3 a {
-
     padding: 10px;
     background-color: #FFA400;
     color: white;
@@ -165,8 +209,27 @@ nav {
 .card2 h3,
 .card3 h3 {
     margin-top: 30px;
+    color: var(--text-color);
 }
 
+
+.card3 img{
+    width: 311px;
+    height: 207px;
+    border-radius: 20px;
+}
+
+.card2 img{
+    width: 311px;
+    height: 207px;
+    border-radius: 20px;
+}
+
+.card1 img{
+    width: 311px;
+    height: 207px;
+    border-radius: 20px;
+}
 
 .card img {
     width: 100%;
@@ -178,6 +241,7 @@ nav {
 
 
 .heading-menu {
+    color: var(--text-color);
     margin-top: 150px;
     text-align: center;
 }
@@ -193,7 +257,7 @@ nav {
 
 
 .container .products-container {
-    box-sizing: border-box;
+    box-sizing: border-box ;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
@@ -214,8 +278,9 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    box-shadow: 0 8px 20px rgb(0, 0, 0, 50%);
+    box-shadow: var(--box-shadow);
     padding: 10px;
+    background-color: var(--card-color);
 }
 
 .container .products-container .product:hover {
@@ -238,6 +303,7 @@ nav {
     font-size: 1rem;
     font-weight: 400;
     margin: 4px 0 10px;
+    color: var(--text-color);
 }
 
 .container .products-container .product:hover h3 {
@@ -300,7 +366,7 @@ nav {
 }
 
 .footer {
-    background-color: #f1f1f1;
+    background-color: var(--footer-color);
     margin-top: 250px;
     padding-top: 0;
     justify-content: center;
@@ -310,6 +376,7 @@ nav {
 }
 
 .contact-box {
+    color: var(--footer-p-color);
     margin-bottom: 1rem;
     margin-top: 5rem;
 }
@@ -326,7 +393,7 @@ nav {
 .social i {
     font-size: 20px;
     margin-right: 1rem;
-    color: #2f3640;
+    color: var(--footer-p-color);
 }
 
 .social i:hover{
@@ -335,7 +402,7 @@ nav {
 
 .contact-box li a {
     font-size: 1rem;
-    color: #2f3640;
+    color: var(--footer-p-color);
 }
 
 .contact-box li a:hover{
@@ -343,17 +410,20 @@ nav {
 } 
 
 .address {
+    color: var(--footer-p-color);
     display: flex;
     flex-direction: column;
 }
 
 .address i {
+    color: var(--footer-p-color);
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
 
 .address span {
+    color: var(--footer-p-color);
     margin-left: 1rem;
 }
 
