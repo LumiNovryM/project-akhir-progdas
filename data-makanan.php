@@ -58,7 +58,7 @@
                         <h2>Dashboard</h2>
                         <div class="search">
                             <form action="">
-                                <input type="text" placeholder="search..." id="search">
+                                <input type="text" placeholder="search..." id="search" name="cari">
                             </form>
                         </div>
 
