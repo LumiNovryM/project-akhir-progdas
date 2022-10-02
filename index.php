@@ -78,19 +78,25 @@ include 'connect.php';
         </div>
 
         <div class="promo-card">
-            <div class="card">
-
-                <img src="images/pexels-horizon-content-3738755.jpg" alt="">
-                <h3>Combo Double</h3>
-                <span><p>2 Black Burger + Frenc Fries</p></span>
-                <h4>Rp. 34.000</h4>
+            <?php  
+            $sql = "SELECT * FROM makanan ORDER BY id ASC";
+            $query = mysqli_query($connect,$sql);
+            while($mkn = mysqli_fetch_array($query)){
+                echo"
+                <div class='card'>
+                <img src='images/pexels-horizon-content-3738755.jpg' alt=''>
+                <h3>$mkn[keterangan]</h3>
+                <span><p>$mkn[nama]</p></span>
+                <h4>$mkn[harga]</h4>
                 <br>
-                <a href="">Beli sekarang</a>
-            </div>
+                <a href='#'>Beli sekarang</a>
+            </div>";
+            };
+            ?>
     </section>
 
     <div class="text-slidder">
-        <h2><span>News</span> In this week</h2>
+        <h2><span>News In This Week</span></h2>
     </div>
     <br>
     <div class="body">
@@ -216,7 +222,6 @@ include 'connect.php';
         </div>
 
     </section>
-
 
 
 
