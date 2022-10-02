@@ -12,7 +12,7 @@ if (isset($_POST ['simpan'])){
 
     $query = mysqli_query ($connect, $sql);
     if ($query){
-        header('Location: dashboard.php');
+        header('Location: data-makanan.php');
     }else{
         header('Location: edit-makanan.php?status=gagal');
     }
