@@ -80,6 +80,10 @@ body{
 
 }
 
+.logo p a{
+    text-decoration: none;
+}
+
 .logo .kuning{
     color: #FFA400;
     margin-right: 5px;
