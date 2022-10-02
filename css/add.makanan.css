@@ -184,6 +184,10 @@ input{
     padding: 10px;
 }
 
+input[type="text"]{
+    outline: none;
+}
+
 h4{
     position: absolute;
     top: 100px;
@@ -200,4 +204,5 @@ h4{
     background-color: var(--icon-color);
     color: var(--button-text-color);
     padding: 0;
+    cursor: pointer;
 }

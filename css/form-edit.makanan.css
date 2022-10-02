@@ -185,6 +185,10 @@ input{
     padding: 10px;
 }
 
+input[type="text"]{
+    outline: none;
+}
+
 h4{
     position: absolute;
     top: 100px;
