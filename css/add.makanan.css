@@ -192,6 +192,7 @@ h4{
     position: absolute;
     top: 100px;
     color: var(--text-color);
+    width: 191px;
 }
 
 .submit{
