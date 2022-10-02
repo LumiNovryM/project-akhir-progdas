@@ -78,7 +78,7 @@ include 'connect.php';
         </div>
 
         <div class="promo-card">
-            <div class="card1">
+            <div class="card">
 
                 <img src="images/pexels-horizon-content-3738755.jpg" alt="">
                 <h3>Combo Double</h3>
@@ -87,50 +87,50 @@ include 'connect.php';
                 <br>
                 <a href="">Beli sekarang</a>
             </div>
-            <div class="card2">
+    </section>
 
-                <img src="images/pexels-caleb-oquendo-3023476.jpg" alt="">
-                <h3>Combo Super</h3>
-                <span><p>2 Burger + French Fries + Soft Drink</p></span>
-                <h4>Rp. 44.000</h4>
-                <br>
-                <a href="">Beli sekarang</a>
+    <div class="text-slidder">
+        <h2><span>News</span> In this week</h2>
+    </div>
+    <br>
+    <div class="body">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+    
+                <div class="slide first">
+                    <img src="images/Group 5.png" alt="">
+                </div>
+                <div class="slide ">
+                    <img src="images/Group 6.png" alt="">
+                </div>
+                <div class="slide ">
+                    <img src="images/Group 8.png" alt="">
+                </div>
+                <div class="slide ">
+                    <img src="images/Group 7.png" alt="">
+                </div>
+    
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+    
             </div>
-            <div class="card3">
-                <img src="images/pexels-ahmad-no-more-6441795.jpg" alt="">
-                <h3>Paket 1</h3>
-                <span><p>HotDog</p></span>
-                <h4>Rp. 12.000</h4>
-                <br>
-                <a href="">Beli sekarang</a>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
             </div>
         </div>
-        <div class="promo-card">
-            <div class="card1">
-                <img src="images/Group 19.png" alt="">
-                <h3>Paket Hemat</h3>
-                <span><p>HotDog</p></span>
-                <h4>Rp. 12.000</h4>
-                <br>
-                <a href="">Beli sekarang</a>
-            </div>
-            <div class="card2">
-                <img src="images/Group 18.png" alt="">
-                <h3>Krispy Combo</h3>
-                <span><p>Fried Chicken</p></span>
-                <h4>Rp. 18.000</h4>
-                <br>
-                <a href="">Beli sekarang</a>
-            </div>
-            <div class="card3">
-                <img src="images/Group 20.png" alt="">
-                <h3>Paket 1</h3>
-                <span><p>Burger + French Fries</p></span>
-                <h4>Rp. 22.000</h4>
-                <br>
-                <a href="">Beli sekarang</a>
-            </div>
-    </section>
+    </div>
+
 
 
     <section class="menu" id="menu">
@@ -233,6 +233,7 @@ include 'connect.php';
 
     <!-- Link Javascript -->
     <script src="js/app.js" defer></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
