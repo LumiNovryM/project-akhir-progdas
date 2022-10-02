@@ -132,6 +132,7 @@ nav {
     background-color: #FFA400;
 }
 
+
 .promo-text {
     color: var(--text-color);
     margin-top: 110px;
@@ -147,10 +148,11 @@ nav {
 
 .promo-card {
     display: flex;
-    margin: auto;
     width: 90%;
+    height: 1500px;
     margin: 50px auto;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -213,6 +215,10 @@ nav {
     position: relative;
 }
 
+.text-slidder{
+    margin-top: 200px;
+}
+
 .text-slidder h2{
     text-align: center;
 }
@@ -227,7 +233,7 @@ nav {
     border-radius: 10px;
     overflow: hidden;
     position: absolute;
-    margin-left: 240px;
+    margin-left: 225px;
 }
 
 .slides{
