@@ -37,8 +37,8 @@ let container = document.querySelector('.hero-img');
 container.onmousemove = (e) => {
     container.querySelectorAll('.parallax').forEach(parallax => {
         let speed = parallax.getAttribute('data-speed');
-        let x = (window.innerWidth - e.pageX * speed) / 80;
-        let y = (window.innerHeight - e.pageY * speed) / 80;
+        let x = (window.innerWidth - e.pageX * speed) / 70;
+        let y = (window.innerHeight - e.pageY * speed) / 70;
         parallax.style.transform = `translateX(${x}px) translateY(${y}px)`;
         container.style.backgroundPosition = `${x}% ${y}%`;
     });
