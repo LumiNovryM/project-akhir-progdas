@@ -4,29 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Data Makanan</title>
+    <title>Edit Data</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/add.makanan.css">
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 
-    <form action="save-makanan.php" method="POST">
+        <div class="container"> 
+                <div class="sidebar">
+                    <div class="logo">
+                        <p><span class="kuning">Makan</span><span class="abu-abu">Cuy</span></p>
+                    </div>
+                    <div class="menu">
+                        <ion-icon name="fast-food-outline" class="icon"></ion-icon>
+                        <p><a href="data-makanan.php">Data Makanan</a></p>
+                        <img src="img/moon.png" id="icon">
+                    </div>
+                </div>
+                <div class="tabel">
+                    <div class="header">
+                        <h2>Dashboard</h2>
+                        <div class="search">
+                            <input type="text" placeholder="search...">
+                        </div>
 
+                    </div>
+                    <div class="content">
+                        <div class="header">
+                            <h4>Edit Data Makanan</h4>
+                            <div class="overview">
+                            <form action="save-makanan.php" method="POST">
 
-
-        <label for="">Id :</label>
-        <input type="text" required type="number" name="id">
-
-        <label for="">Nama :</label>
-        <input type="text" required type="text" name="nama">
-
-        <label for="">Harga :</label>
-        <input type="text" required type="text" name="harga">
-
-        <label for="">Keterangan :</label>
-        <input type="text" required type="text" name="keterangan">
-
-        <input type="submit" name="simpan" value="simpan">
-
-    </form>
+                        
+                            <label for="">Id :</label>
+                            <input type="text" required type="number" name="id">
+                        
+                            <label for="">Nama :</label>
+                            <input type="text" required type="text" name="nama">
+                        
+                            <label for="">Harga :</label>
+                            <input type="text" required type="text" name="harga">
+                        
+                            <label for="">Keterangan :</label>
+                            <input type="text" required type="text" name="keterangan">
+                        
+                            <input class="submit" type="submit" name="simpan" value="simpan">
+                            </form>
+                        </div>
+                    </div>  
+        </div>
+    
+<script src="js/add-makanan.js"></script>        
 
 </body>
 </html>

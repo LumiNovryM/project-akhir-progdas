@@ -28,7 +28,7 @@ include 'connect.php';
                 </div>
                 <div class="menu">
                     <ion-icon name="fast-food-outline" class="icon"></ion-icon>
-                    <p><a href="">Data Makanan</a></p>
+                    <p><a href="data-makanan.php">Data Makanan</a></p>
                     <img src="img/moon.png" id="icon">
                 </div>
    
