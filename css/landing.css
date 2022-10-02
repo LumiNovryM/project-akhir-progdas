@@ -427,3 +427,14 @@ nav {
     margin-left: 1rem;
 }
 
+/* SCROLL BAR */
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #A2A1A1;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #FFA400 ;
+    border-radius: 6px;
+}

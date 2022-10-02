@@ -14,6 +14,7 @@
  --table: #D9D9D9;
  --shadow: rgba(0,0,0,0);
  --header: #BAB8B8;
+ --tr-color: #B5B5B5;
 }
 
 .dark-theme{
@@ -32,6 +33,7 @@
  --shadow:  20px 20px 60px #0f0f16,
  -20px -20px 60px #393550;
  --header: #1F1D2C;
+ --tr-color:#292544;
 }
 
 *{
@@ -75,7 +77,6 @@ body{
     text-align: center;
     font-weight: bold;
     margin-bottom: 5px;
-
 }
 
 .logo p a{
@@ -115,7 +116,6 @@ body{
     color: var(--icon-color);
 }
 
-
 /*=== table ===*/
 .tabel .header{
     /* background-color: aqua; */
@@ -153,7 +153,6 @@ body{
 
 .tabel .content{
     margin: 20px;
-    box-sizing: border-box;
     background-color: var(--table);
     height: 560px;
     width: 1110px;
@@ -164,81 +163,46 @@ body{
 }
 
 .content .header{
-    box-sizing: border-box;
-    padding: 10px;
-    background-color: var(--header);
-    margin: 10px;
-    width: 1090px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
+    position: absolute;
+    width: 164px;
+    height: 509px;
+    align-items: center;
+    left: 690px;
 }
 
-.content .header h4{
-    color: white;
-    font-weight: 400;
-    font-size: 19px;
+label{
+    color: var(--text-color);
 }
 
-.content .header button{
+input{
+    color: #ffffff;
     border: none;
-    background-color: var(--button);
-    padding: 5px 15px ;
+    background-color: var(--tr-color);
     border-radius: 5px;
+    width: 220px;
+    height: 32px;
+    padding: 10px;
+}
+
+input[type="text"]{
+    outline: none;
+}
+
+h4{
+    position: absolute;
+    top: 100px;
+    color: var(--text-color);
+}
+
+.submit{
+    position: absolute;
+    border-radius: 5px;
+    width: 140px;
+    height: 24px;
+    top: 398px;
+    left: 6px;
+    background-color: var(--icon-color);
+    color: var(--button-text-color);
+    padding: 0;
     cursor: pointer;
-}
-
-.header button a{
-    text-decoration: none;
-    color: #F1F1F1;
-}
-
-.content .tampil{
-    display: flex;
-    justify-content: center;
-    /* background-color: aqua; */
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.content .tampil table{
-    /* border-collapse: collapse; */
-    width: 1070px;    
-    margin: 20px 0;
-    border-radius: 10px 10px 0px 0px;
-    overflow: hidden;
-}
-
-.content .tampil table .head{
-    background-color: #32353A; 
-    color: white;
-    text-align: left;
-}
-
-.content .tampil table th,
-.content .tampil table td{
-    padding: 12px 15px;
-    color: white;
-}
-
-.content .tampil table tr:nth-of-type(even){
-    background-color: #292B2F;
-}
-
-
-.content .tampil .edit{
-    color: #DF0707;
-    font-size: 20px;
-}
-
-.content .tampil .hapus {
-    color: #055BF3;
-    font-size: 20px;
-}
-
-.content .tampil .btn{
-    display: flex;
-    /* background-color: aqua; */
-    width: 40px;
-    justify-content: space-around;
 }

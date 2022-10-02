@@ -8,7 +8,7 @@ $sql = "DELETE FROM makanan WHERE id='$id'";
 $query = mysqli_query ($connect, $sql);
 
 if ($query){
-    header('Location: dashboard.php');
+    header('Location: data-makanan.php');
     }else{
     header('Location: delete-makanan.php?status=gagal');
     }

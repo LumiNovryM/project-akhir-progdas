@@ -21,14 +21,25 @@ previewBox.forEach(close => {
     };
 });
 
-var icon =document.getElementById("icon");
+var icon = document.getElementById("icon");
 
 icon.onclick = function () {
     document.body.classList.toggle("dark-theme");
-    if(document.body.classList.contains("dark-theme")) {
+    if (document.body.classList.contains("dark-theme")) {
         icon.src = "img/sun.png";
-    }else {
+    } else {
         icon.src = "img/moon.png"
     }
 }
 
+let container = document.querySelector('.hero-img');
+
+container.onmousemove = (e) => {
+    container.querySelectorAll('.parallax').forEach(parallax => {
+        let speed = parallax.getAttribute('data-speed');
+        let x = (window.innerWidth - e.pageX * speed) / 70;
+        let y = (window.innerHeight - e.pageY * speed) / 70;
+        parallax.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        container.style.backgroundPosition = `${x}% ${y}%`;
+    });
+};

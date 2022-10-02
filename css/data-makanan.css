@@ -13,7 +13,9 @@
  --search: #A2A1A1;
  --table: #D9D9D9;
  --shadow: rgba(0,0,0,0);
- --header: #BAB8B8;
+ --header: #969292;
+ --tr-color: #adadad;
+ --even: #a3a2a2;
 }
 
 .dark-theme{
@@ -32,6 +34,8 @@
  --shadow:  20px 20px 60px #0f0f16,
  -20px -20px 60px #393550;
  --header: #1F1D2C;
+ --tr-color:#292544;
+ --even: #231f3a;
 }
 
 *{
@@ -76,6 +80,10 @@ body{
     font-weight: bold;
     margin-bottom: 5px;
 
+}
+
+.logo p a{
+    text-decoration: none;
 }
 
 .logo .kuning{
@@ -195,6 +203,10 @@ body{
     margin-left: 10px;
 }
 
+.content .tampil table tr:nth-of-type(even){
+    background-color: var(--even);
+}
+
 .content .tampil table{
     /* border-collapse: collapse; */
     width: 1090px;    
@@ -204,7 +216,7 @@ body{
 }
 
 .content .tampil table .head{
-    background-color: #A2A1A1; 
+    background-color: var(--header); 
     color: white;
     text-align: left;
 }
@@ -216,7 +228,7 @@ body{
 }
 
 .content .tampil table tr{
-    background-color: #B5B5B5;
+    background-color: var(--tr-color);
 }
 
 
