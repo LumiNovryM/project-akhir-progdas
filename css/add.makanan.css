@@ -173,10 +173,12 @@ label{
 
 input{
     color: #ffffff;
-    border-color: var(--search);
+    border: none;
     background-color: var(--tr-color);
-    border-radius: 10px;
-    width: 200px;
+    border-radius: 5px;
+    width: 220px;
+    height: 32px;
+    padding: 10px;
 }
 
 h4{
@@ -187,11 +189,12 @@ h4{
 
 .submit{
     position: absolute;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 140px;
     height: 24px;
-    top: 373px;
+    top: 398px;
     left: 6px;
     background-color: var(--icon-color);
     color: var(--button-text-color);
+    padding: 0;
 }
