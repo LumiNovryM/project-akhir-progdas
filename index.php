@@ -221,7 +221,12 @@ include 'connect.php';
 
 
 
-
+    <div class="promo-card">
+        <div class="card">
+            <img src="" alt="">
+            <p></p>
+        </div>
+    </div>
 
 
 
